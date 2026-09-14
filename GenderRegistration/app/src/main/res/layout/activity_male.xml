@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".MaleActivity">
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/maleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Male Registration"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#87CEEB"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <!-- Male Image -->
+
+    <ImageView
+        android:id="@+id/maleImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/male"
+        android:contentDescription="Male Image"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/maleTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Name -->
+
+    <TextView
+        android:id="@+id/maleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_below="@id/maleImage"
+        android:layout_marginTop="25dp" />
+
+    <!-- Email -->
+
+    <TextView
+        android:id="@+id/maleEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_below="@id/maleName"
+        android:layout_marginTop="15dp" />
+
+    <!-- Gender -->
+
+    <TextView
+        android:id="@+id/maleGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_below="@id/maleEmail"
+        android:layout_marginTop="15dp" />
+
+    <!-- Back Button -->
+
+    <Button
+        android:id="@+id/maleBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#87CEEB"
+        android:layout_below="@id/maleGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Submit Button -->
+
+    <Button
+        android:id="@+id/maleSubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#87CEEB"
+        android:layout_below="@id/maleBackBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>

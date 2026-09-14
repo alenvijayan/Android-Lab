@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".FemaleActivity">
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/femaleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Female Registration"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FF1493"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <!-- Female Image -->
+
+    <ImageView
+        android:id="@+id/femaleImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/female"
+        android:contentDescription="Female Image"
+        android:scaleType="centerCrop"
+        android:layout_below="@id/femaleTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <!-- Name -->
+
+    <TextView
+        android:id="@+id/femaleName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_below="@id/femaleImage"
+        android:layout_marginTop="25dp" />
+
+    <!-- Email -->
+
+    <TextView
+        android:id="@+id/femaleEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:layout_below="@id/femaleName"
+        android:layout_marginTop="15dp" />
+
+    <!-- Gender -->
+
+    <TextView
+        android:id="@+id/femaleGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_below="@id/femaleEmail"
+        android:layout_marginTop="15dp" />
+
+    <!-- Back Button -->
+
+    <Button
+        android:id="@+id/femaleBackBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF69B4"
+        android:layout_below="@id/femaleGender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <!-- Submit Button -->
+
+    <Button
+        android:id="@+id/femaleSubmitBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FF1493"
+        android:layout_below="@id/femaleBackBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
